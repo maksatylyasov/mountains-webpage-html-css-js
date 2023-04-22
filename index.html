@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mountains</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section class="main-page">
+      <nav id="navbar" class="header">
+        <img src="/assets/Logo.png" alt="logo image" />
+        <ul class="navbar">
+          <li><a href="#history">01. HISTORY</a></li>
+          <li><a href="#slideshow">02. TEAM</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="history" class="history">
+      <article>
+        <h1>01.</h1>
+        <h2>HISTORY</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante
+          viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est.
+          Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras
+          scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis
+          hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec
+          congue.
+        </p>
+      </article>
+    </section>
+
+    <section id="slideshow" class="slideshow">
+      <article>
+        <article class="carousel">
+          <img
+            id="image1"
+            src="/assets/carousel-image1.png"
+            alt="carousel image1"
+          />
+          <img
+            id="image2"
+            src="/assets/carousel-image2.png"
+            alt="carousel image2"
+          />
+          <img
+            id="image3"
+            src="/assets/carousel-image3.png"
+            alt="carousel image3"
+          />
+          <img
+            id="image4"
+            src="/assets/carousel-image4.png"
+            alt="carousel image4"
+          />
+        </article>
+        <div class="buttons">
+          <a id="dot1" class="dot active" onclick="carouselButton1()">.</a>
+          <a id="dot2" class="dot" onclick="carouselButton2()"></a>
+          <a id="dot3" class="dot" onclick="carouselButton3()"></a>
+        </div>
+      </article>
+      <!-- <article class="buttons"></article> -->
+    </section>
+
+    <section class="climb-text">
+      <article>
+        <h1>02.</h1>
+        <h2>CLIMB</h2>
+        <p>
+          Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida
+          quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim
+          tortor nec congue.
+        </p>
+      </article>
+    </section>
+    <section id="tab1" class="climb">
+      <div class="tabs">
+        <ul class="tab-buttons">
+          <li id="tab-button1" class="active">
+            <a onclick="tab1Function()">MOUNTAIN 1</a>
+          </li>
+          <li id="tab-button2">
+            <a onclick="tab2Function()">MOUNTAIN 2</a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="schedule" class="">
+        <h3>SCHEDULE</h3>
+        <div>
+          <p>25 Nov 2016</p>
+          <p>Vestibulum viverra</p>
+        </div>
+
+        <div>
+          <p>28 Nov 2016</p>
+          <p>Vestibulum viverra</p>
+        </div>
+        <div>
+          <p>18 Dec 2016</p>
+          <p>Vestibulum viverra</p>
+        </div>
+        <div>
+          <p>7 Jan 2017</p>
+          <p>Vestibulum viverra</p>
+        </div>
+      </div>
+      <div id="schedule2">
+        <h3>SCHEDULE</h3>
+        <div>
+          <p>17 Nov 2016</p>
+          <p>Vestibulum viverra</p>
+        </div>
+
+        <div>
+          <p>13 Dec 2016</p>
+          <p>Vestibulum viverra</p>
+        </div>
+        <div>
+          <p>28 Dec 2016</p>
+          <p>Vestibulum viverra</p>
+        </div>
+        <div>
+          <p>9 Feb 2017</p>
+          <p>Vestibulum viverra</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Mobile accordion tabs-->
+    <section id="tabMobile">
+      <div class="tabs">
+        <article>
+          <div onclick="tab1Mobile()">MOUNTAIN 1</div>
+          <article id="mountain1" class="mountain1">
+            <div class="mountain1-schedule">
+              <h3>SCHEDULE</h3>
+              <span>17 Nov 2016 Vestibulum viverra </span>
+              <span>13 Dec 2016 Vestibulum viverra</span>
+              <span>28 Dec 2016 Vestibulum viverra</span>
+              <span>9 Feb 2017 Vestibulum viverra</span>
+            </div>
+          </article>
+        </article>
+        <article>
+          <div onclick="tab2Mobile()">MOUNTAIN 2</div>
+          <article id="mountain2" class="mountain2">
+            <div class="mountain1-schedule">
+              <h3>SCHEDULE</h3>
+              <span>25 Nov 2016 Vestibulum viverra </span>
+              <span>28 Nov 2016 Vestibulum viverra</span>
+              <span>18 Dec 2016 Vestibulum viverra</span>
+              <span>7 Jan 2017 Vestibulum viverra</span>
+            </div>
+          </article>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <div><img src="/assets/Logo-footer.png" alt="footer logo image" /></div>
+      <p>COPYRIGHT 2016. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
